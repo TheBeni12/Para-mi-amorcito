@@ -168,3 +168,58 @@ body {
  .valentines-day:hover .text {
    transform: translateY(-50px);
  }
+
+/* 📱 FIX ESPECIAL PARA CELULAR */
+@media (max-width: 768px) {
+
+  body {
+    height: auto;
+    padding: 20px;
+    overflow-y: auto;
+  }
+
+  .valentines-day {
+    transform: scale(0.7);
+    margin-bottom: 20px;
+  }
+
+  #card {
+    position: relative;
+    width: 100%;
+    max-width: 95vw;
+    height: auto;
+    left: 0;
+    top: 0;
+    margin: 20px auto;
+    transform: none !important;
+    display: block;
+  }
+
+  .side {
+    width: 100%;
+    height: auto;
+    transform: none !important;
+  }
+
+  .side.one {
+    display: none; /* ocultamos la hoja izquierda */
+  }
+
+  .side.two {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  #card h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  #card p {
+    font-size: 1.2em;
+    text-align: left;
+    padding: 10px;
+  }
+}
+
