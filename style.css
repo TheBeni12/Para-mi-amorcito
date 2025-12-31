@@ -223,3 +223,57 @@ body {
   }
 }
 
+/* 🚨 FIX FINAL DEFINITIVO PARA CELULAR */
+@media (max-width: 768px) {
+
+  body {
+    display: block !important;
+    height: auto !important;
+    overflow-x: hidden !important;
+  }
+
+  .valentines-day {
+    transform: scale(0.6);
+    margin: 40px auto;
+  }
+
+  #card {
+    position: static !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 20px auto !important;
+    transform: none !important;
+    left: auto !important;
+    top: auto !important;
+  }
+
+  .side {
+    width: 100% !important;
+    height: auto !important;
+    transform: none !important;
+  }
+
+  .side.one {
+    display: none !important;
+  }
+
+  .side.two {
+    padding: 20px !important;
+    border-radius: 16px;
+    background: #fff;
+  }
+
+  #card h2 {
+    font-size: 2em !important;
+    text-align: center;
+  }
+
+  #card p {
+    font-size: 1.2em !important;
+    text-align: left;
+    padding: 10px !important;
+  }
+}
+
